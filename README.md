@@ -1,2 +1,2 @@
 # AndroidXiaomi
-Xiaomi Internship
+小米终端安卓开发笔记
