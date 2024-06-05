@@ -1,2 +1,3 @@
 # AndroidXiaomi
 小米终端安卓开发笔记
+AndroidCode中week2是第二周的作业
