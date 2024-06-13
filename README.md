@@ -12,7 +12,7 @@
 有一些注意事项：
 
 - AndroidManifest.xml中需要添加
-  - <uses-permission android:name="android.permission.INTERNET"/>
-  - <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  - < uses-permission android:name="android.permission.INTERNET"/>
+  - < uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
 - 访问远程url时要关闭vpn，关闭tizi
