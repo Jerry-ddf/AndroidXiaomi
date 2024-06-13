@@ -15,7 +15,7 @@
         android:layout_width="162dp"
         android:layout_height="100dp"
         android:rotationX="18"
-        android:text="12313213"
+        android:text="789789"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -27,8 +27,12 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="26dp"
+        android:enabled="true"
         android:text="跳转"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="341dp" />
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,6 +11,10 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -21,6 +25,7 @@ public class Login extends AppCompatActivity {
     private EditText editusername;
     private EditText editpassword;
     private Button button;
+    private ActivityResultLauncher<Intent> launcher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +41,13 @@ public class Login extends AppCompatActivity {
         editusername = findViewById(R.id.editTextUsername);
         editpassword = findViewById(R.id.editTextPassword);
         button = findViewById(R.id.buttonLogin);
+        launcher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
+            @Override
+            public void onActivityResult(ActivityResult result) {
+
+            }
+        });
+
         button.setOnClickListener(v -> {
             String username = editusername.getText().toString();
             String password = editpassword.getText().toString();
@@ -56,6 +68,10 @@ public class Login extends AppCompatActivity {
                 intent.putExtras(bundle);
                 startActivity(intent);
             }
+
         });
+
+        //定义一个编辑框监听器，在文本达到指定长度的时候隐藏键盘
+
     }
 }

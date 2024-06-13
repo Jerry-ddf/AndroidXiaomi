@@ -1,8 +1,11 @@
 package com.example.week2;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -33,4 +36,5 @@ public class MainActivity extends AppCompatActivity {
         password.setText(String.format("密码：%s", word));
 
     }
+
 }

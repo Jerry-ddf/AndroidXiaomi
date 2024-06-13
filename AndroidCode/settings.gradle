@@ -21,3 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "My Application"
 include ':app'
+include ':test1'
+include ':week2'
+include ':sqlitetest'
